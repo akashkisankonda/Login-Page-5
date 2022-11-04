@@ -1,0 +1,138 @@
+body,
+html {
+    height: 100%;
+    background-image: url("Images/Background.jpg");
+    background-position: center;
+    background-size: cover;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100%;
+    overflow: auto;
+    display: flex;
+}
+
+form {
+    height: 424px;
+    width: 317px;
+    margin: auto;
+    position: relative;
+}
+
+form h1,
+span,
+a {
+    display: block;
+    text-align: center;
+}
+
+form span,
+a {
+    font-weight: 600;
+    color: grey;
+    text-decoration: none;
+}
+
+form a {
+    margin-bottom: 50px;
+}
+
+form span {
+    margin-bottom: 50px;
+}
+
+form button {
+    transition: 500ms;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px 0px 10px 0px;
+    background-color: rgb(245, 63, 62);
+    color: white;
+    font-weight: 600;
+    border-radius: 3px;
+    box-shadow: 0px 1px 10px rgb(84 81 81);
+    margin: 20px 0px 20px 0px;
+}
+
+form button:hover {
+    box-shadow: none;
+}
+
+.signup-btn {
+    background: none;
+    border: 2px solid rgb(245, 63, 62);
+    border-radius: 3px;
+    color: rgb(245, 63, 62);
+    box-shadow: none;
+
+}
+
+.signup-btn:hover {
+    box-shadow: 0px 1px 10px rgb(84 81 81);
+}
+
+.input {
+    transition: 500ms;
+    display: flex;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 3px;
+    margin: 20px 0px 20px 0px;
+    box-shadow: 0px 1px 10px rgb(224, 213, 213);
+}
+
+.input:hover {
+    box-shadow: none;
+}
+
+.input input {
+    width: 85%;
+    outline: none;
+    padding-left: 5%;
+    border: none;
+    background-color: rgb(255, 232, 232);
+}
+
+.input input::placeholder {
+    font-weight: 600;
+    font-size: smaller;
+    letter-spacing: 1px;
+}
+
+.input .right {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(245, 63, 62);
+}
+
+.right img {
+    margin: auto;
+}
+
+
+@media only screen and (max-width: 350px) {
+
+    body,
+    html {
+        padding: 0% 3% 0% 3%;
+    }
+}
+
+#error {
+    color: rgb(255, 53, 53);
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
